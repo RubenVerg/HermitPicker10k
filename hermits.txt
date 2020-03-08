@@ -1,4 +1,4 @@
-export const hermits = [{
+const hermits = [{
   'name'   : 'BdoubleO100',
   'youtube': 'bdoubleo100',
   'twitch' : 'bdoubleo',
