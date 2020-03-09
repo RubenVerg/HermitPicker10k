@@ -8,7 +8,7 @@ $(document).ready(function() {
       output += hermits[hID].traits[tID] + ' ';
      }
     output += `"><div class="pfp">
-    <img class="hermitpic" src="images/${hermits[hID].name}.png">
+    <img class="hermitpic" src="images/${hermits[hID].name.toLowerCase()}.png">
     </div>
     <div class="playername">${hermits[hID].name}</div>
     <div class="channels"><a href="https://youtube.com/${hermits[hID].youtube}">Youtube</a> <a href="https://twitch.tv/${hermits[hID].twitch}">Twitch</a> <a href="https://twitter.com/${hermits[hID].twitter}">Twitter</a></div></div>`;
