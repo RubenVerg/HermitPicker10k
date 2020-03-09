@@ -16,45 +16,57 @@
     <div id="container">
         <div id="header">
           <div class="pickimg">&nbsp;</div>
-          <H1>Hermitpicker 9000</H1>
-          <H2>Season 7 Edition</H2>
-          <p class="clear"><em>(another handy gadget brought to you by <a href="https://reddit.com/u/the_pwd_is_murder">TPIM Enterprises</a>)</em></p>
+          <h1>HermitPicker 10k</h1>
+          <h2>Season 7 Edition</h2>
+          <p class="clear"><em>(an handy gadget brought to you by <a href="https://reddit.com/u/the_pwd_is_murder">TPIM Enterprises</a> and <a href="https://reddit.com/user/RubenVerg">RubenVerg Corp.</a>)</em></p>
           <p class="mobile">Mobile users, make your selections and then scroll down to see your results.</p>
-          <noscript><p class="jswarning">Please ensure that javascript is activated to use this gadget.</p></noscript>
-
+          <noscript class="jswarning">Please ensure that javascript is activated to use this gadget.</noscript>
         </div><!--end header-->
+
         <div id="questions">
-          <H1>What matters to you?</H1>
+          <h1>What matters to you?</h1>
           <p>Note: The picker will only choose Hermits which match ALL of your selected options.</p>
           <form name="pickerform" id="pickerform" action="" method="post">
             <p>
-              <label>Content:</label><br>
+              <label>Type of Hermit:</label><br>
               <label>
                 <input class="hermitselector" type="checkbox" value="builder" >Builder</input>
               </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="redstone" >Redstone</input>
               </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="terraform" >Terraformer (WIP)</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="prank" >Pranker (WIP)</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="lore" >w/ Lore</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="alteregos" >Alter Egos</input>
+              </label>
             </p>
             <p>
-              <label>Presentation Style:</label><br>
+              <label>Style:</label><br>
               <label>
-                <input class="hermitselector" type="checkbox" value="hyper" >Hyper</input>
+                <input class="hermitselector" type="checkbox" value="anxious" >Agitated</input>
               </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="calm" >Calm</input>
-              </label><br>
-              <label>
-                <input class="hermitselector" type="checkbox" value="derpy" >Super Derpy</input>
               </label>
               <label>
-                <input class="hermitselector" type="checkbox" value="whizkid" >Super Smart</input>
+                <input class="hermitselector" type="checkbox" value="derpy" >Derpy</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="smart" >Smart</input>
               </label>
             </p>
             <p>
-              <label>Editing Style:</label><br>
+              <label>Editing:</label><br>
               <label>
-                <input class="hermitselector" type="radio" name="editing" value="np" checked>No preference</input>
+                <input class="hermitselector" type="radio" name="editing" value="np" checked>(ignore)</input>
               </label>
               <label>
                 <input class="hermitselector" type="radio" name="editing" value="heavyediting" >Heavy</input>
@@ -64,63 +76,57 @@
               </label>
             </p>
             <p>
-              <label>Lore/Roleplay:</label><br>
-              <label>
-                <input class="hermitselector" type="checkbox" value="lore" >Lore</input>
-              </label>
-              <label>
-                <input class="hermitselector" type="checkbox" value="alteregos" >Alter Egos</input>
-              </label>
-            </p>
-            <p>
               <label>Popularity:</label><br>
               <label>
-                <input class="hermitselector" type="radio" name="popularity" value="np" checked>No preference</input>
-              </label><br>
+                <input class="hermitselector" type="radio" name="popularity" value="np" checked>(ignore)</input>
+              </label>
               <label>
                 <input class="hermitselector" type="radio" name="popularity" value="bigchannel" >Super popular! (1m+ Subs)</input>
-              </label><br>
+              </label>
               <label>
-                <input class="hermitselector" type="radio" name="popularity" value="smallchannel" >Super Small! (<500k subs)</input>
+                <input class="hermitselector" type="radio" name="popularity" value="smallchannel" >Super Small! (&lt;500k subs)</input>
               </label>
             </p>
             <p>
-              <label>Gender:</label><br>
+              <label>Sex:</label><br>
               <label>
-                <input class="hermitselector" type="radio" name="gender" value="np" checked>No preference</input>
-              </label><br>
+                <input class="hermitselector" type="radio" name="gender" value="np" checked>(ignore)</input>
+              </label>
               <label>
                 <input class="hermitselector" type="radio" name="gender" value="male" >Male</input>
-              </label><br>
+              </label>
               <label>
                 <input class="hermitselector" type="radio" name="gender" value="female" >Female</input>
               </label>
             </p>
             <p>
-              <label>Continent:</label><br>
+              <label>Country:</label><br>
               <label>
-                <input class="hermitselector" type="radio" name="continent" value="np" checked>No preference</input>
-              </label><br>
-              <label>
-                <input class="hermitselector" type="radio" name="continent" value="US" >North America</input>
+                <input class="hermitselector" type="checkbox" value="np" checked>(ignore)</input>
               </label>
               <label>
-                <input class="hermitselector" type="radio" name="continent" value="Europe" >Europe</input>
+                <input class="hermitselector" type="checkbox" value="US" >North America</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="Europe" >Europe</input>
+              </label>
+              <label>
+                <input class="hermitselector" type="checkbox" value="native" >Native English-speaker (WIP)</input>
               </label>
             </p>
             <p>
               <label>Recording Habits:</label><br>
               <label>
-                <input class="hermitselector" type="checkbox" value="streamer" >Livestreams Often</input>
-              </label><br>
+                <input class="hermitselector" type="checkbox" value="streamer" >Livestreams</input>
+              </label>
               <label>
-                <input class="hermitselector" type="checkbox" value="regularreleases" >Frequent/regular videos</input>
-              </label><br>
+                <input class="hermitselector" type="checkbox" value="regularreleases" >Regular videos</input>
+              </label>
               <label>
-                <input class="hermitselector" type="checkbox" value="diversecontent" >Plays other games</input>
-              </label><br>
+                <input class="hermitselector" type="checkbox" value="diversecontent" >Also plays other games</input>
+              </label>
               <label>
-                <input class="hermitselector" type="checkbox" value="Modded" >Modded Minecraft</input>
+                <input class="hermitselector" type="checkbox" value="Modded" >Also plays modded Minecraft</input>
               </label>
             </p>
             <p>
@@ -133,7 +139,7 @@
               </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="S3" >Season 3</input>
-              </label><br>
+              </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="S4" >Season 4</input>
               </label>
@@ -142,19 +148,19 @@
               </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="S6" >Season 6</input>
-              </label><br>
+              </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="S7" >Season 7</input>
               </label>
             </p>
             <p>
-              <label>Factions:</label><br>
+              <label>Groups:</label><br>
               <label>
                 <input class="hermitselector" type="checkbox" value="Architech" >Architech</input>
               </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="Concorp" >Concorp</input>
-              </label><br>
+              </label>
               <label>
                 <input class="hermitselector" type="checkbox" value="IDEA" >IDEA</input>
               </label>
